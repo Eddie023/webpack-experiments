@@ -1,16 +1,8 @@
-import { Button } from "@material-ui/core";
-
-export function bar(){
+export function bar() {
   const button = document.createElement('button');
-  button.innerText = 'hello'
+  button.innerText = 'hello';
 
-  document.body.appendChild(button)
+  document.body.appendChild(button);
 
-  return "called from bar func"
+  return;
 }
-
-export function bar2(){
-  return 's'
-}
-
-console.log('inside ba');

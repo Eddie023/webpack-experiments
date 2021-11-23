@@ -1,5 +1,8 @@
-import { bar} from './bar';
+import { bar } from './bar';
+import { makeImage } from './image';
+import imageURL from './assets/images/logo.png';
 
-bar()
+bar();
 
-console.log('called from index');
+const image = makeImage(imageURL);
+document.body.appendChild(image);
