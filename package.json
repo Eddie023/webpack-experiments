@@ -1,0 +1,23 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx webpack -- --env MODE=production",
+    "dev": "npx webpack -- --env MODE=development --watch",
+    "start": "npx webpack-dev-server -- --env MODE=development",
+    "dev:debug": "npx webpack -- --mode development"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  },
+  "dependencies": {
+    "ts-loader": "^9.2.6"
+  }
+}
