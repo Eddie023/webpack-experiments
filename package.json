@@ -7,17 +7,24 @@
     "build": "npx webpack -- --env MODE=production",
     "dev": "npx webpack -- --env MODE=development --watch",
     "start": "npx webpack-dev-server -- --env MODE=development",
-    "dev:debug": "npx webpack -- --mode development"
+    "dev:debug": "npx webpack -- --mode development",
+    "prettify": "npx prettier --write . --ignore-unknown",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "npm run prettify"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.4.1",
+    "url-loader": "^4.1.1",
     "webpack": "^5.64.2",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.5.0"
-  },
-  "dependencies": {
-    "ts-loader": "^9.2.6"
   }
 }
